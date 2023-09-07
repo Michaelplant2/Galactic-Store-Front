@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import HomeScreen from './screens/HomeScreen'
 import ProductScreen from './screens/ProductScreen'
+import CartScreen from './screens/CartScreen'
 import axios from 'axios'
 
 axios.defaults.baseURL = "http://127.0.0.1:8000";
@@ -20,6 +21,7 @@ function App() {
             <Routes>
               <Route path="/" Component={HomeScreen} exact />
               <Route path="/product/:id" Component={ProductScreen} />
+              <Route path="/cart/:id?" Component={CartScreen} />
             </Routes>
           </Container>
         </main>
