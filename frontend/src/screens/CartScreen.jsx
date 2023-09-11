@@ -29,7 +29,7 @@ function CartScreen() {
    }
 
    const checkoutHandler = () => {
-      navigate(`/login?redirect=/shipping`)
+      navigate('/login?redirect=shipping')
    }
 
   return (
@@ -38,7 +38,7 @@ function CartScreen() {
          <Col md={8}>
             <h1>Shopping Cart</h1>
             {cartItems.length === 0 ? (
-               <Message>
+               <Message variant="info">
                   Your cart is empty <Link to='/'>Go Back</Link>
                </Message>
                ) : (
