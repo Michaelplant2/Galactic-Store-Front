@@ -11,6 +11,7 @@ import RegisterScreen from './screens/RegisterScreen'
 import ProfileScreen from './screens/ProfileScreen'
 import ShippingScreen from './screens/ShippingScreen'
 import PaymentScreen from './screens/PaymentScreen'
+import PlaceOrderScreen from './screens/PlaceOrderScreen'
 import axios from 'axios'
 
 axios.defaults.baseURL = "http://127.0.0.1:8000";
@@ -29,6 +30,7 @@ function App() {
               <Route path="/register" Component={RegisterScreen} />
               <Route path="/profile" Component={ProfileScreen} />
               <Route path="/shipping" Component={ShippingScreen} />
+              <Route path="/placeorder" Component={PlaceOrderScreen} />
               <Route path="/payment" Component={PaymentScreen} />
               <Route path="/product/:id" Component={ProductScreen} />
               <Route path="/cart/:id?" Component={CartScreen} />
