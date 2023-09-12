@@ -7,11 +7,11 @@ import { addToCart, removeFromCart } from '../actions/cartActions'
 
 function CartScreen() {
 
-   const match = useParams()
    const location = useLocation()
    const navigate = useNavigate()
-   const productId = match.id
-   const qty = location.search ? Number(location.search.split('=')[1]) : 1
+   const {id} = useParams()
+   const productId = id
+   const qty = location.search ? Number(location.search.split('=')[1]) : 1;
 
    const dispatch = useDispatch()
 
@@ -29,7 +29,7 @@ function CartScreen() {
    }
 
    const checkoutHandler = () => {
-      navigate('/login?redirect=shipping')
+      navigate('/login?redirect=/shipping')
    }
 
   return (
@@ -64,7 +64,7 @@ function CartScreen() {
                                     value={item.qty} 
                                     onChange={(e) => dispatch(addToCart(item.product, Number(e.target.value)))}>
                                        {
-                                          [...Array(item.countInStock).keys()].map((x) => (
+                                          [...Array(Math.max(0, item.countInStock)).keys()].map((x) => (
                                           <option key={x + 1} value={x + 1}>
                                              {x + 1}
                                           </option>
