@@ -19,3 +19,17 @@ h3 {
 .rating span {
    margin: 2px;
 }
+
+main {
+   background: url(./assets/stars.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+.logo {
+   width: 60px;
+}
+
+.navbar {
+   background-color: black !important;
+}
