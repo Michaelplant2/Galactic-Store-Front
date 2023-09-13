@@ -16,6 +16,7 @@ import OrderScreen from './screens/OrderScreen'
 import UserListScreen from './screens/UserListScreen'
 import UserEditScreen from './screens/UserEditScreen'
 import ProductListScreen from './screens/ProductListScreen'
+import ProductEditScreen from './screens/ProductEditScreen'
 import axios from 'axios'
 
 axios.defaults.baseURL = "http://127.0.0.1:8000";
@@ -42,6 +43,7 @@ function App() {
               <Route path="/admin/userlist" Component={UserListScreen} />
               <Route path="/admin/user/:id/edit" Component={UserEditScreen} />
               <Route path="/admin/productlist" Component={ProductListScreen} />
+              <Route path="/admin/product/:id/edit" Component={ProductEditScreen} />
             </Routes>
           </Container>
         </main>
