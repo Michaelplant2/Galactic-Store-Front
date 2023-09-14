@@ -91,7 +91,9 @@ function ProductListScreen() {
                {products.map(product => (
                   <tr key={product._id}>
                      <td>{product._id}</td>
-                     <td>{product.name}</td>
+                     <LinkContainer to={`/product/${product._id}`}>
+                        <td>{product.name}</td>
+                     </LinkContainer>
                      <td>${product.price}</td>
                      <td>{product.countInStock}</td>
                      <td>{product.category}</td>
