@@ -16,7 +16,6 @@
     <a href="https://github.com/Michaelplant2/Galactic-Store-Front"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://reactive-cocktails.netlify.app">View Demo</a>
     ·
     <a href="https://github.com/Michaelplant2/Galactic-Store-Front/issues">Report Bug</a>
     ·
