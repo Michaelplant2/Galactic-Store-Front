@@ -85,18 +85,35 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/Michaelplant2/Galactic-Store-Front.git
    ```
-3. Install NPM packages
+2. Install Vite packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Install Django
+   ```sh
+   https://www.djangoproject.com/start/
+   ```
+4. Run virtual environment
+   ```sh
+   source env/Scripts/activate
+   ```
+5. Run backend server
+   ```sh
+   cd backend
+   ```
+   ```sh
+   python manage.py runserver
+   ```
+6. Open new terminal & run frontend server
+   ```sh
+   cd frontend
+   ```
+   ```sh
+   npm run dev
    ```
 
 <p align="right">(<a href="#readme">back to top</a>)</p>
