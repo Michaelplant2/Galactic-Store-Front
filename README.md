@@ -51,7 +51,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img align="center" src="../Galactic-Store-Front/frontend/src/assets/site-homepage.png" />
+<img align="center" src="frontend/src/assets/site-homepage.png" />
 
 <p align="right">(<a href="#readme">back to top</a>)</p>
 
