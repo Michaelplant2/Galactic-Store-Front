@@ -52,7 +52,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img align="center" src="../Galactic-Store-Front/frontend/src/assets/Screenshot 2023-09-19 111623.png" />
+<img align="center" src="../Galactic-Store-Front/frontend/src/assets/site-homepage.png" />
 
 <p align="right">(<a href="#readme">back to top</a>)</p>
 
